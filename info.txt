@@ -1,0 +1,10 @@
+
+http -> hyper text transfer protocol 
+html -> hyper text markup language
+xml -> Extensible markup language
+
+ftp -> file transfer protocol
+udp -> user datagram protocol
+
+tcp -> transfer control protocol
+
