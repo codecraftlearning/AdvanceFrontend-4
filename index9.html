@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="asdas" method="post" target="_blank">
+      <div>
+        <label for="addressInput">Address</label>
+        <br />
+        <textarea
+          name="address"
+          id="addressInput"
+          placeholder="Enter your address"
+        ></textarea>
+      </div>
+      <br />
+
+      <div>
+        <label for="standardInput">Standard: </label>
+        <select name="standard" id="standardInput">
+          <option value="">Select from list</option>
+          <option value="first">1st</option>
+          <option value="second">2nd</option>
+          <option value="third">3rd</option>
+          <option value="fourth">4th</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="SubjectsInput">Subjects: </label>
+        <select name="Subjects" id="SubjectsInput" multiple="true">
+          <option value="m">Math</option>
+          <option value="p">physics</option>
+          <option value="c">Chemistry</option>
+          <option value="b">Biology</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <label for="hobbiesInput">Hobbies: </label>
+        <span>
+          <input type="checkbox" name="hobby" id="singinigCheckbox" value="singing"/>
+          <label for="singinigCheckbox">Singing</label>
+        </span>
+        <span>
+          <input type="checkbox" name="hobby" id="danchingCheckbox" value="dancing"/>
+          <label for="danchingCheckbox">Dancing</label>
+        </span>
+        <span>
+          <input type="checkbox" name="hobby" id="actingCheckbox" value="acting"/>
+          <label for="actingCheckbox">Acting</label>
+        </span>
+      </div>
+
+      <div>
+        <label for="genderInput">Gender: </label>
+        <span>
+          <input type="radio" name="gender" id="maleradio" value="male"/>
+          <label for="maleradio">Male</label>
+        </span>
+        <span>
+          <input type="radio" name="gender" id="femaleradio" value="female"/>
+          <label for="femaleradio">Female</label>
+        </span>
+      </div>
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
