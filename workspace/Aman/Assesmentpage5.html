@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Library - City Library</title>
+</head>
+<body>
+
+    <h1>City Library Management System</h1>
+
+    <nav>
+        <a href="Assesmentpage1.html">Home</a> | 
+        <a href="Assesmentpage2.html">Books</a> | 
+        <a href="Assesmentpage3.html">Members</a> | 
+        <a href="Assesmentpage4.html">Issue Books</a> | 
+        <a href="Assesmentpage5.html">Search</a>
+    </nav>
+
+    <h2>Search Library</h2>
+    <h3>Search Books</h3>
+    <form>
+        <table>
+            <tr>
+                <td>Search by:</td>
+                <td>
+                    <select name="bookCriteria">
+                        <option value="title">Title</option>
+                        <option value="author">Author</option>
+                        <option value="id">Book ID</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Search Term:</td>
+                <td><input type="text" name="bookSearchTerm"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Search Books"></td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+
+    
+    <h3>Search Members</h3>
+    <form>
+        <table>
+            <tr>
+                <td>Search by:</td>
+                <td>
+                    <select name="memberCriteria">
+                        <option value="name">Name</option>
+                        <option value="id">Member ID</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Search Term:</td>
+                <td><input type="text" name="memberSearchTerm"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Search Members"></td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h3>Search Results</h3>
+    <p>Search results will appear here after you perform a search.</p>
+
+    
+    <h4>Sample Book Results:</h4>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B001</td>
+                <td>Harry Potter</td>
+                <td>J.K. Rowling</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    
+    <h4>Sample Member Results:</h4>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Member ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>M001</td>
+                <td>John Doe</td>
+                <td>123-456-7890</td>
+                <td>Active</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
