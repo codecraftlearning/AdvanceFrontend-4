@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books Management - City Library</title>
+</head>
+<body>
+
+    <h1>City Library Management System</h1>
+    <nav>
+        <a href="#">Home </a> | 
+        <a href="#">Books</a> | 
+        <a href="#">Members</a> | 
+        <a href="#">Issue Books</a> | 
+        <a href="#">Search</a>
+    </nav>
+
+    <h2>Books Management</h2>
+
+    <h3>Add New Book</h3>
+    <form>
+        <label for="bookid">Book ID:</label>
+        <input type="text" id="bookid" name="bookid"><br><br>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br><br>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author"><br><br>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="fiction">Fiction</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="technology">Technology</option>
+        </select><br><br>
+
+        <input type="submit" value="Add Book">
+    </form>
+
+    <h3>Book List</h3>
+    
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B001</td>
+                <td>Harry Potter</td>
+                <td>J.K. Rowling</td>
+                <td>Fiction</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>B002</td>
+                <td>Physics Book</td>
+                <td>Einstein</td>
+                <td>Science</td>
+                <td>Issued</td>
+            </tr>
+            <tr>
+                <td>B003</td>
+                <td>World War 2</td>
+                <td>John Smith</td>
+                <td>History</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>B004</td>
+                <td>Java Programming</td>
+                <td>James Gosling</td>
+                <td>Technology</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

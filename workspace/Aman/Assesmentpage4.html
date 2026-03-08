@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Issue Books - City Library</title>
+</head>
+<body>
+
+    <h1>City Library Management System</h1>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a> | 
+        <a href="#">Books</a> | 
+        <a href="#">Members</a> | 
+        <a href="#">Issue Books</a> | 
+        <a href="#">Search</a>
+    </nav>
+
+    <h2>Issue Books</h2>
+
+    <h3>Issue New Book</h3>
+    <form>
+        <!-- Table used for form layout alignment -->
+        <table>
+            <tr>
+                <td>Member ID:</td>
+                <td><input type="text" name="memberID"></td>
+            </tr>
+            <tr>
+                <td>Book ID:</td>
+                <td><input type="text" name="bookID"></td>
+            </tr>
+            <tr>
+                <td>Issue Date:</td>
+                <td><input type="date" name="issueDate"></td>
+            </tr>
+            <tr>
+                <td>Return Date:</td>
+                <td><input type="date" name="returnDate"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Issue Book"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h3>Currently Issued Books</h3>
+    
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Issue ID</th>
+                <th>Member Name</th>
+                <th>Book Title</th>
+                <th>Issue Date</th>
+                <th>Return Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>I001</td>
+                <td>John Doe</td>
+                <td>Physics Book</td>
+                <td>2025-09-15</td>
+                <td>2025-10-15</td>
+                <td>Issued</td>
+            </tr>
+            <tr>
+                <td>I002</td>
+                <td>Jane Smith</td>
+                <td>Java Programming</td>
+                <td>2025-09-20</td>
+                <td>2025-10-20</td>
+                <td>Issued</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Return Book</h3>
+    <form>
+        
+        <table>
+            <tr>
+                <td>Issue ID:</td>
+                <td><input type="text" name="issueID"></td>
+            </tr>
+            <tr>
+                <td>Return Date:</td>
+                <td><input type="date" name="actualReturnDate"></td>
+            </tr>
+            <tr>
+                <td>Fine (if any):</td>
+                <td><input type="text" name="fine"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Return Book"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
