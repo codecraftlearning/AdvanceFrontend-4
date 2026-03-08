@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Library Management System</title>
+</head>
+
+<body>
+    <h1>City Library Management System</h1>
+
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Books</a> |
+        <a href="#">Members</a> |
+        <a href="#">Issue Books</a> |
+        <a href="#">Search</a>
+    </nav>
+
+    <h2>Search Library</h2>
+    <h3>Search Books</h3>
+
+    <form>
+        <table>
+            <tr>
+                <td>Search by :</td>
+                <td><select id="Search by" name="Search by">
+                <option value="Title">Title</option>
+                <option value="Mr">Mr</option>
+                <option value="Miss">Miss</option>
+                <option value="Mrs">Mrss</option>
+            </tr>
+            <tr>
+                <td>Search Term :</td>
+                <td><input type="text" name="search term"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Search Books"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h3>Search Members</h3>
+
+    <form>
+        <table>
+            <tr>
+                <td>Search By : </td>
+                <td><select id="Search by" name="Search by">
+                <option value="Name">Name</option>
+                <option value="John Doe">John Doe</option>
+                <option value="Jane Smith">Jane Smith</option>
+                <option value="Bob Johnson">Bob Johnson</option>
+            </tr>
+            <tr>
+                <td>Search Term :</td>
+                <td><input type="text" name="search term"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Search Members"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h3>Searh Results</h3>
+    <p>Search results will appear here after you perform a searh.</p>
+
+    <h3>Sample Book Results:</h3>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Book Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B001</td>
+                <td>Harry Potter</td>
+                <td>J.K. Rowling</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Sample Member Results</h4>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Member Id</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>M001</td>
+                <td>John Doe</td>
+                <td>123-456-7890</td>
+                <td>Active</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+
+    
