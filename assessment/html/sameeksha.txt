@@ -9,3 +9,16 @@
 8. C
 9. B
 10.C
+
+
+
+Correct : 6 / 10
+creativity: 0 / 10
+view: 30 / 30
+code: 35 / 50
+
+Total: 71 / 100
+Comment: Improvemnt required and learn new tags for creativity
+            HTML tags closing required
+            Verry goog performance
+

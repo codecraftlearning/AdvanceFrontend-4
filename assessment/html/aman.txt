@@ -8,3 +8,15 @@
 8.D
 9.A
 10.B
+
+
+
+Correct : 7 / 10
+creativity: 0 / 10
+view: 28 / 30
+code: 40 / 50
+
+Total: 75 / 100
+Comment: Improvemnt required and learn new tags for creativity
+            verry good performance, keep it up
+
