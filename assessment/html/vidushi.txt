@@ -12,3 +12,14 @@
 9.C
 10.B
 ------------------------------------------------------------------------------------------------------------------------------------------
+
+Correct : 10 / 10
+creativity: 0 / 10
+view: 22 / 30
+code: 40 / 50
+
+Total: 72 / 100
+Comment: Improvemnt required and learn new tags for creativity
+            need to learn correct usage of tags
+            Verry goog performance
+
