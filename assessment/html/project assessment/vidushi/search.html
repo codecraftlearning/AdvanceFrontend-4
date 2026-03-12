@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>city lib search</title>
+</head>
+
+<body>
+    <h1>city lib management system</h1>
+    <p>
+        <a href="home2.html">home</a>
+        <a href="books.html">books</a>
+        <a href="members.html">members</a>
+        <a href="issue.html">issue books</a>
+        <a href="search.html">search</a>
+    </p>
+
+    <h2>search books</h2>
+    <form action="/" method="post">
+        <div>
+            <label for="search">search by: </label>
+            <select id="search" name="search by">
+                <option>title</option>
+                <option>author</option>
+                <option>category</option>
+            </select>
+        </div>
+        <div>
+            <label for="search_books">search term: </label>
+            <input type="text" id="search_books" name="search term" placeholder="enter search term">
+        </div>
+        <button type="submit">search books</button>
+    </form>
+
+    <h2>search members</h2>
+    <form action="/" method="post">
+        <div>
+            <label for="search_by_members">search by: </label>
+            <select id="search_by_members" name="search by">
+                <option>name</option>
+                <option>email</option>
+                <option>phone</option>
+            </select>
+        </div>
+        <div>
+            <label for="search_members">search term: </label>
+            <input type="text" id="search_members" name="search term" placeholder="enter search term">
+        </div>
+        <button type="submit">search members</button>
+    </form>
+
+    <h3>search results</h3>
+    <p>search results will appear here after you perform a search.</p>
+
+    <h3>sample book results</h3>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>book id</th>
+                <th>title</th>
+                <th>author</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>b001</td>
+                <td>harry potter</td>
+                <td>j.k. rowling</td>
+                <td>available</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>sample member results</h3>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>member id</th>
+                <th>name</th>
+                <th>phone</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>m001</td>
+                <td>john doe</td>
+                <td>123-456-7890</td>
+                <td>active</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><a href="Page1.html">back to start page</a></p>
+</body>
+
+</html>

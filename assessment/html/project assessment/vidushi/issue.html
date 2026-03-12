@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>city lib issue books</title>
+</head>
+
+<body>
+    <h1>city lib management system</h1>
+    <p>
+        <a href="home2.html">home</a>
+        <a href="books.html">books</a>
+        <a href="members.html">members</a>
+        <a href="issue.html">issue books</a>
+        <a href="search.html">search</a>
+    </p>
+    <h2>issue new book</h2>
+    <form action="/" method="post">
+        <div>
+            <label for="member_id">member id: </label>
+            <input type="text" id="member_id" name="member id" placeholder="enter member id">
+        </div>
+        <div>
+            <label for="book_id">book id: </label>
+            <input type="text" id="book_id" name="book id" placeholder="enter book id">
+        </div>
+        <div>
+            <label for="issue_date">issue date: </label>
+            <input type="date" id="issue_date" name="issue date">
+        </div>
+        <div>
+            <label for="return_date">return date: </label>
+            <input type="date" id="return_date" name="return date">
+        </div>
+        <button type="submit">issue book</button>
+    </form>
+
+    <h3>currently issued books</h3>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>issue id</th>
+                <th>member name</th>
+                <th>book title</th>
+                <th>issue date</th>
+                <th>return date</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>i001</td>
+                <td>john doe</td>
+                <td>physics book</td>
+                <td>2025-09-15</td>
+                <td>2025-10-15</td>
+                <td>issued</td>
+            </tr>
+            <tr>
+                <td>i002</td>
+                <td>jane smith</td>
+                <td>java programming</td>
+                <td>2025-09-20</td>
+                <td>2025-10-20</td>
+                <td>issued</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>return book</h3>
+    <form action="/" method="post">
+        <div>
+            <label for="issue_id">issue id: </label>
+            <input type="text" id="issue_id" name="issue id" placeholder="enter issue id">
+        </div>
+        <div>
+            <label for="return_date2">return date: </label>
+            <input type="date" id="return_date2" name="return date">
+        </div>
+        <div>
+            <label for="Fine">fine: </label>
+            <input type="text" id="Fine" name="fine" placeholder="enter fine if any">
+        </div>
+        <button type="submit">return book</button>
+    </form>
+    <p><a href="Page1.html">back to start page</a></p>
+</body>
+
+</html>

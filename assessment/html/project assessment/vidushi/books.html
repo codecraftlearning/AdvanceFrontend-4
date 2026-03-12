@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City library books managemenT system</title>
+</head>
+
+<body>
+    <h1>City management system</h1>
+    <P> <a href="Home.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="members.html">Members</a>
+        <a href="issue.html">Issue Books</a>
+        <a href="search.html">Search</a>
+    </P>
+    <h2>Book management</h2>
+    <br>
+    <h3> add new book </h3>
+    <form action="/" method="post">
+        <div>
+            <label for="book_id">BOOK ID: </label>
+            <input type="text" id="book_id" name="BOOK ID" PLACEHOLDER="enter valid id">
+        </div>
+        <div>
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="Title" PLACEHOLDER="enter title">
+        </div>
+        <div>
+            <label for="author">Author: </label>
+            <input type="text" id="author" name="Author" PLACEHOLDER="enter author name">
+        </div>
+        <div>
+            <label for="category">Category: </label>
+            <select name="Category" id="category">
+                <option>fiction</option>
+                <option>science</option>
+                <option>history</option>
+                <option>maths</option>
+            </select>
+        </div>
+        <button type="submit">Add Book</button>
+    </form>
+    <h3>Book List</h3>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>Book Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B001</td>
+                <td>Harry Potter</td>
+                <td>J.K.Rowling</td>
+                <td>Fiction</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>B002</td>
+                <td>Physics Book</td>
+                <td>Einstein</td>
+                <td>Science</td>
+                <td>Issued</td>
+            </tr>
+            <tr>
+                <td>B003</td>
+                <td>World War 2</td>
+                <td>John Smith</td>
+                <td>History</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>B004</td>
+                <td>Java Programming</td>
+                <td>James Gosling</td>
+                <td>Technology</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><a href="Page1.html">back to start page</a></p>
+</body>
+
+</html>

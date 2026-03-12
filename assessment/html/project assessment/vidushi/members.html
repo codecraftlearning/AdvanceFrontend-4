@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>city lib members management</title>
+</head>
+
+<body>
+    <h1>city lib management system</h1>
+    <p>
+        <a href="home2.html">home</a> |
+        <a href="books.html">books</a> |
+        <a href="members.html">members</a> |
+        <a href="issue.html">issue books</a>
+        <a href="search.html">search</a>
+    </P>
+
+    <h2>members management</h2>
+
+    <h3>add new member</h3>
+    <form action="/" method="post">
+        <div>
+            <label for="member_id">member id: </label>
+            <input type="text" id="member_id" name="member id" placeholder="enter valid id">
+        </div>
+        <div>
+            <label for="name">name: </label>
+            <input type="text" id="name" name="name" placeholder="enter name">
+        </div>
+        <div>
+            <label for="phone">phone: </label>
+            <input type="text" id="phone" name="phone" placeholder="enter phone number">
+        </div>
+        <div>
+            <label for="email">email: </label>
+            <input type="text" id="email" name="email" placeholder="enter email">
+        </div>
+        <div>
+            <label for="address">address: </label>
+            <input type="text" id="address" name="address" placeholder="enter address">
+        </div>
+        <button type="submit">add member</button>
+    </form>
+
+    <h3>members list</h3>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>member id</th>
+                <th>name</th>
+                <th>phone</th>
+                <th>email</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>m001</td>
+                <td>john doe</td>
+                <td>123-456-7890</td>
+                <td>john@email.com</td>
+                <td>active</td>
+            </tr>
+            <tr>
+                <td>m002</td>
+                <td>jane smith</td>
+                <td>098-765-4321</td>
+                <td>jane@email.com</td>
+                <td>active</td>
+            </tr>
+            <tr>
+                <td>m003</td>
+                <td>bob johnson</td>
+                <td>555-123-4567</td>
+                <td>bob@email.com</td>
+                <td>active</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><a href="Page1.html">back to start page</a></p>
+</body>
+
+</html>
