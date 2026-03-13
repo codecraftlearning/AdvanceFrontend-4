@@ -1,0 +1,15 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin: 10px;
+}
+
+#box1 {
+  background-color: black;
+}
+
+.my-box {
+  background-color: cadetblue;
+  border: 1px solid black;
+}
