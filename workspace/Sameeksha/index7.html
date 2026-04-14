@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+      <style>
+
+        body {
+            position: relative;
+            background-color: rgb(200, 238, 190);
+        }
+
+        .header-section {
+            margin-bottom: 60px;
+            background-color: rgb(15, 24, 14);
+            padding: 30px;
+            border-radius: 18px;
+        }
+
+        .header-section > .header {
+            margin: 10px;
+            text-align: center;
+            color: rgb(171, 214, 201);
+        }
+
+
+        .form-area {
+            position: absolute;
+            width: 1000px;
+            padding: 60px;
+            border-radius: 31px;
+            border-color: rgba(255, 255, 255, 0.568);
+            background-color: rgba(255, 255, 255, 0.568);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .form-area > .form-legend {
+            font-weight: 600;
+            font-style: italic;
+        }
+
+
+    </style>  
+</head>
+
+<body>
+    <div class="header-section">
+        <h1 class="header">Student Page</h1>
+    </div>
+
+    <fieldset class="form-area">
+
+        <legend class="form-legend">Registration Form</legend>
+        <form  action="/" method="post" class="registration-form">
+
+            <div class="form-item">
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" id="fullname">
+            </div>
+
+            <div class="form-item">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age">
+            </div>
+
+            <div class="form-item">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="20" rows="5"></textarea>
+            </div>
+
+            <div class="form-item">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <div class="form-item">
+                <label for="Gender"></label>
+                <input type="radio" name="gender" id="gendermale">
+                <label for="gendermale">Male</label>
+                <input type="radio" name="gender" id="genderfemale">
+                <label for="genderfemale">Female</label>
+                <input type="radio" name="gender" id="genderother">
+                <label for="genderother">Other</label>
+            </div>
+
+            <div class="form-item">
+            <input type="submit" name="id" value="Create Student">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
