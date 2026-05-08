@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -160,27 +161,223 @@
         .tech-icons img:hover {
             filter: grayscale(0%);
         }
+
+            {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            gap: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 8px;
+        }
+
+        .hero-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Buttons */
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: opacity 0.3s;
+        }
+
+        .btn-dark {
+            background-color: #2d2d2d;
+            color: white;
+        }
+
+        .btn-orange {
+            background-color: #ffb347;
+            color: #4a4a4a;
+        }
+
+        .btn-wide {
+            width: 400px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        /* Tech Stack Section */
+        .tech-stack {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .section-title {
+            background-color: #f3eee7;
+            padding: 10px;
+            font-weight: normal;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* 6 columns like the image */
+            gap: 30px;
+            justify-items: center;
+            margin-bottom: 50px;
+        }
+
+        .icon-item img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .footer-btn {
+            margin-top: 20px;
+        }
+
+        /* Responsive for Mobile */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .btn-group {
+                justify-content: center;
+            }
+
+            .icon-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <header>
-        <div class="logo-group">
-            <img src="https://www.codecraftlearning.in/assets/images/2L1.png">
-            <span class="company-name">Code Craft Learning</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Collaboration</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Certification</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="admin-login">Admin Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo-group">
+                <img src="https://www.codecraftlearning.in/assets/images/2L1.png">
+                <span class="company-name">Code Craft Learning</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Collaboration</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Certification</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="admin-login">Admin Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Crafting Code, Shaping Careers</h1>
+                <p>At <strong>Code Craft Learning</strong>, we believe that anyone can become a confident, skilled
+                    software developer with the right guidance, <strong>hands-on experience</strong>, and a bit of
+                    creative spark.</p>
+                <p>Founded by industry professionals with a <strong>passion for mentoring</strong>, Code Craft Learning
+                    bridges the <strong>gap between theory and hands-on coding</strong>. Our project-based learning
+                    paths are job-focused and offered at <strong>very affordable prices</strong>.</p>
+
+                <div class="btn-group">
+                    <a href="#" class="btn btn-dark">Book a Demo</a>
+                    <a href="#" class="btn btn-orange">Enroll Now</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://www.codecraftlearning.in/assets/images/img1.svg" alt="Person coding illustration">
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <h2 class="section-title">Customize Your Coding Journey</h2>
+            <div class="icon-grid">
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/html.png"
+                        alt="HTML5"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/git.png"
+                        alt="Git"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/microservices.png"
+                        alt="FastAPI"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/FastAPI.png"
+                        alt="TS"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/ts.png" alt="Vue">
+                </div>
+                <div class="icon-item"><img
+                        src="https://ik.imagekit.io/codecraftlearning/tech-images/design-pattern.png" alt="K8s"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/vue.png"
+                        alt="Python"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/kubernetes.png"
+                        alt="Java"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/Flask.png"
+                        alt="Express"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/python.png"
+                        alt="Django"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/cicd.png"
+                        alt="Docker"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/java.png"
+                        alt="JavaScript"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/express.png"
+                        alt="CSS3"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/django.png"
+                        alt="React"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/nosql.png"
+                        alt="NodeJS"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/docker.png"
+                        alt="Angular"></div>
+                <div class="icon-item"><img src="https://ik.imagekit.io/codecraftlearning/tech-images/sql.png"
+                        alt="SQL"></div>
+            </div>
+            <div class="footer-btn">
+                <a href="#" class="btn btn-orange btn-wide">Take Me There</a>
+            </div>
+        </section>
 </body>
+
 </html>
