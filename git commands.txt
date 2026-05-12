@@ -1,0 +1,12 @@
+
+git fetch origin  -> to fetch all the latest branch details
+git branch -> to list all the current branches
+git pull origin -> to pull all the latest code
+git comit -m "comment message" -> to comit all the changes
+git push origin -> "push the comit"
+git checkout -b new-branch-name -> "to create a new branch"
+git branch --set-upstream-to=origin/main aks
+git push origin aks
+git status -> to check the latest changes
+git add <file name.file extnxtion>  -> to add a specific file 
+git add . -> to add all the changes
