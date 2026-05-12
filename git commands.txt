@@ -1,4 +1,4 @@
-
+////All git commands
 git fetch origin  -> to fetch all the latest branch details
 git branch -> to list all the current branches
 git pull origin -> to pull all the latest code
