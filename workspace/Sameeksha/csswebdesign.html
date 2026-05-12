@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+       body {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+         }
+         
+         div {
+         } 
+
+         .container {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* border: 2px solid blue;" */
+         }
+
+         .logo-imaage {
+            width: 50px;
+            height: 60px;
+         }
+         
+         .red{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: left;
+            align-items: center;
+            /* border: 2px solid red;" */
+         }
+
+         .red > .company-name {
+            font-size: 2em;
+            font-weight: 900;
+            color: rgb(37, 28, 28);
+         }
+
+         .red > .company-name >sup{
+            font-size: 0.5em;
+         }
+
+         .orange {
+            background-color: rgb(48, 43, 43);
+            padding: 10px 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            gap: 40px;
+            align-items: center;
+             /* border: 2px solid orange;" */
+            }
+
+            .orange > .page-link {
+                color: white;
+                text-decoration: none;
+            }
+
+            .orange > .page-button {
+                color: rgb(40, 40, 40);
+                background-color: rgb(255, 208, 0);
+                padding: 4px 8px;
+                border-radius: 4px;
+                text-decoration: none;
+            }
+
+            .green {
+              /* border: 2px solid green; */
+               display: flex;
+               flex-direction: row;
+               gap: 20px;
+               justify-content: space-between;
+               align-items: center;
+              }
+
+              .green > .illustration > img {
+               width: 400px;
+               height: auto;
+              }
+
+              .green > .content {
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               justify-content: left;
+               width: 500%;
+              }
+
+              .green > .content > .cta {
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+              }
+
+              .green > .content > h2 {
+               text-decoration: underline;
+               padding: 0px;
+               margin: 0px;
+              }
+
+              .green > .content > p {
+               padding: 0px;
+               margin: 0px;
+               text-align: justify;
+               font-size: 1.2em;
+              }
+
+              .btn.primary {
+               padding: 15px 40px;
+               background-color: rgb(46 46 46);
+               color: white;
+               border-radius: 8px;
+               border: none;
+               font-size: 1.2em;
+              }
+              
+              .btn.secondary {
+               padding: 25px;
+               background-color: rgb(255 184 76);
+               color: rgb(46 46 46);
+               border-radius: 8px;
+               border: none;
+               font-size: 1.2em;
+              }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <header class="red">
+            <img
+            src="https://www.codecraftlearning.in/assets/images/2L1.png"
+            class="logo-imaage"
+          />
+          <span class="company-name">Code Craft Learning<sup>TM</sup></span>  
+        </header>
+        <nav class="orange">
+            <a href=""class = "page-link">About</a>
+            <a href=""class = "page-link">Courses</a>
+            <a href=""class = "page-link">Collaboration</a>
+            <a href=""class = "page-link">Testimonials</a>
+            <a href=""class = "page-link">Certification</a>
+            <a href=""class = "page-link">Contact</a>
+            <a href=""class = "page-button">Admin Login</a>
+        </nav>
+        <div class="green">
+         <div class="content">
+         <h2>Crafting Code , Shaping Creeres</h2>
+            <p>
+               At <strong>Code Craft Learning,</strong> we believe that anyone can become a confident,
+                skilled software developer with the right guidance, <strong>hands-on experience,</strong> and
+                 a bit of creative spark.
+            </p>
+            <p>
+               Founded by industry professionals with a <strong>passion for mentoring,</strong> Code Craft
+                Learning bridges the <strong>gap between theory and hands-on coding.</strong> Our project-
+                based learning paths are job-focused and offered at <strong>very affordable prices.</strong>
+            </p>
+            <div class="cta">
+               <button class="btn primary">Book a Demo</button>
+               <button class="btn secondary">Enroll Now</button>
+            </div>
+      </div>
+      <div class="illustration">
+         <img 
+         src="https://www.codecraftlearning.in/assets/images/img1.svg" 
+         alt="">
+         </div>
+      </div>
+    </div>   
+    </div>
+  </body>
+</html>
+  
