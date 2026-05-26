@@ -36,8 +36,8 @@ conditional operators
 ===   equality operator (type checking)
 >    greater than operator
 < leass than operator
->= greater than eueal to operator
-<= less than eueal to operator
+>= greater than equal to operator
+<= less than equal to operator
 
 && AND Operator
 || OR Operator
