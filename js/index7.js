@@ -1,6 +1,6 @@
 
 
-//scope 1. global scope,  2. local scope
+//scope 1. global scope,  2. local/block/function scope
 
 
 let name = "Ankit";
