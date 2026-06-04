@@ -1,0 +1,6 @@
+https://www.google.com/search?q=difference+between+var+let+and+const&rlz=1C1VDKB_enIN1201IN1201&sourceid=chrome&ie=UTF-8&amc=1&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQABiABBjwBRieBjINCAIQABiABBjwBRieBjINCAMQABiABBjwBRieBjINCAQQABiABBjwBRieBjINCAUQABiABBjwBRieBtIBCzE1NzQyNGowajMxqAIGsAIB&oq=difference+between+var+let+and+const&udm=50&aep=42&cud=1&qsubts=1779461889010&source=chrome.crn.rb&ccb=1&cs=1&hl=en-US&biw=1366&bih=641&mstk=AUtExfChUwyECnkzgdquR3bjVYHXBdYA2bRL7TnDJ6IZSUucQETFTXd2xSAVxDUt47EhAkYI1kJNp6B6vQbmbhzEePtOdr8_3SfFHows84JS3ZqnPyhAFxKRkhuIify82JlAucS8YI8JWHewKcQdUfksQFpRQPUHi5XMuU0&csuir=1&mtid=A28Qar1NqdSx4w_N2oXQDA
+
+
+
+
+Hoisting is JavaScript's default behavior of moving variable and function declarations to the top of their containing scope before the code executes.Behind the scenes, JavaScript scans your code for declarations during the compilation phase, allocates memory for them, and sets up references before running a single line of logic.
