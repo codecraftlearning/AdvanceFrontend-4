@@ -1,0 +1,42 @@
+// hello
+
+// 1). Write a program to check wheather a number is odd or even, if number is odd print ODD, ense print even
+
+// 2). Write a program to count all odd numbers in a given range
+//     eg: if range is 10 then count of odd numbers will be 5 which is (1, 3, 5, 7, 9). hence print 5
+
+// 3). Write a program to print all the completly divisible numbers for a certain given number
+//     eg: if given number is 20 then print 1, 2, 4, 5, 10
+
+// // 1)
+// let num = 10;
+// let numtype = "";
+
+// if (num % 2 === 0) {
+//     numtype = "Even"
+// } else {
+//     numtype = "Odd"
+// }
+
+// console.log(numtype);
+
+// // 2)
+// let range = 15;
+// let numcount = 0;
+
+// for (let i = 1; i <= range; i = i + 1) {
+//     if (i % 2 === 1) {
+//         numcount = numcount+1;
+//     }
+
+// }
+// console.log(numcount);
+
+//  3)
+let num = 10;
+
+for (let i = 1; i <= num; i = i + 1) {
+    if(num % i === 0){
+        console.log(i);
+    }
+}
