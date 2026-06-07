@@ -19,12 +19,27 @@
 // }
 
 // checkPrimeInRange(18);
-let a=1;
-let b=2;
+// let a=1;
+// let b=2;
  
-let num= a;
-a=b;
-b=num;
+// let num= a;
+// a=b;
+// b=num;
 
-console.log(a,b);
+// console.log(a,b);
 
+// write a program to reverse a number;
+//eg if num = 12345 then after reversing num should become 54321; and print it
+
+function numberSwap(num) {
+ let swap = 0;
+
+  while (num > 0) {
+    let rem = num % 10;
+    swap = (swap * 10) + rem;
+    num = parseInt(num / 10);
+  }
+  return swap;
+}
+
+console.log(numberSwap(12345));
