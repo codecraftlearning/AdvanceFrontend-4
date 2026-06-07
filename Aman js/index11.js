@@ -13,5 +13,5 @@ function isPrime(num) {
 let res = isPrime(97);
 console.log(res);
 
-// write a program to print all the prime numbers within a range (use functions)
+// write a program to pr  int all the prime numbers within a range (use functions)
 // eg: if range is 10 the print 2,3,5,7
