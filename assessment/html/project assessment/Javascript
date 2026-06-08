@@ -1,0 +1,18 @@
+In JavaScript, the main difference is scope and mutability: var is function-scoped and allows redeclaration, let is block-scoped and allows reassignment but not redeclaration, while const is block-scoped and cannot be reassigned after initialization. Developers today generally avoid var in favor of let and const for cleaner, more predictable code.
+🔑 Key Differences Between var, let, and const
+Feature	var	let	const
+Scope	Function-scoped or global	Block-scoped	Block-scoped
+Redeclaration	Allowed in the same scope	❌ Not allowed in the same block	❌ Not allowed
+Reassignment	✅ Allowed	✅ Allowed	❌ Not allowed
+Hoisting	Hoisted and initialized as undefined	Hoisted but in Temporal Dead Zone (TDZ) until declared	Hoisted but in TDZ until declared
+Best Use Case	Legacy code, not recommended	Variables that change values	Constants or values that should never change
+
+
+
+
+Hoisting in JavaScript is the behavior where variable and function declarations are moved ("hoisted") to the top of their scope during the compilation phase, before the code is executed.
+🔑 Key Points About Hoisting
+•	Function declarations are fully hoisted: you can call them before they appear in the code.
+•	var variables are hoisted but initialized as undefined.
+•	let and const variables are hoisted too, but they remain in the Temporal Dead Zone (TDZ) until the actual line of declaration is reached. Accessing them before that causes a ReferenceError.
+
