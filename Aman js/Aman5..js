@@ -5,12 +5,9 @@ function reverseNumber(num){
 
         let rem = num % 10;
         reverse = (reverse * 10) + rem;
-        num = parseInt(num/10);
+        num = parseInt(num / 10);
     }
     return reverse;
 }
-const inputnum = 12345;
-const result =reverseNumber(inputnum);
 
-console.log("original:",inputnum);
-console.log("reverse:",result);
+console.log(reverseNumber(12345));
