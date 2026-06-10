@@ -14,10 +14,11 @@ console.log(arr);
 
 function doubleValue(num) { // call by value
   num *= 2;
+  return num;
 }
 
 let num = 2;
-doubleValue(num);
+num = doubleValue(num);
 console.log(num);
 
 
