@@ -10,21 +10,22 @@
 // 1 % 10 = 1
 // 1 / 10 = 0.1
 
-function sumOfDigits(num) {
-  let sum = 0;
+// function sumOfDigits(num) {
+//   let sum = 0;
 
-  while (num > 0) {
-    let rem = num % 10;
-    sum += rem;
-    num = parseInt(num / 10);
-  }
-  return sum;
-}
+//   while (num > 0) {
+//     let rem = num % 10;
+//     sum += rem;
+//     num = parseInt(num / 10);
+//   }
+//   return sum;
+// }
 
-console.log(sumOfDigits(123456789));
+// console.log(sumOfDigits(123456789));
 
 
 // write a program to reverse a number;
 //eg if num = 12345 then after reversing num should become 54321; and print it
 //if any one not tried working on this logic,
 //class will be cancelled for that day. (and will be counted too!!)
+
