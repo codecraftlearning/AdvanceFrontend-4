@@ -66,38 +66,46 @@
       }
 
       .todo-app > .tasks {
-        padding: 0px 30px;
+        padding: 0px 30px 0px 10px;
         border: 1px solid rgb(162, 162, 162);
         border-radius: 12px;
       }
 
-      .tasks > li {
+      .tasks > ol > li {
         font-size: 1em;
+        margin-bottom: 4px;
       }
+
+      .list-item-container {
+        width: 100%;
+        display: flex;
+        padding: 2px 5px;
+        justify-content: space-between;
+        border: 1px solid rgb(136, 136, 136);
+        border-radius: 8px;
+        align-items: center;
+      }
+
+      .list-item-container > div {
+        display: flex;
+        gap: 4px;
+      }
+
+      .list-item-container > div > button {
+        width: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .list-item-container:hover {
+        background-color: aliceblue;
+      }
+
+
     </style>
-
-    <script>
-      function fetchTask() {
-        const taskInputEL = document.getElementById("taskInput");
-        const newTask = taskInputEL.value;
-        taskInputEL.value = "";
-
-        const newTaskEl = document.createElement("li");
-        const listItemContainerEL = document.createElement('div');
-        const listItemtextEl = document.createElement('span');
-        const listitemCompletedCTA = document.createElement('button');
-        listitemCompletedCTA.innerText = "DONE";
-
-        listItemtextEl.innerText = newTask;
-        listItemContainerEL.appendChild(listItemtextEl);
-        listItemContainerEL.appendChild(listitemCompletedCTA);
-
-        newTaskEl.appendChild(listItemContainerEL);
-
-        const pendingTasksEl = document.getElementById("pendingTasks");
-        pendingTasksEl.appendChild(newTaskEl);
-      }
-    </script>
   </head>
   <body>
     <div class="container">
@@ -117,5 +125,56 @@
         </fieldset>
       </div>
     </div>
+
+    <script>
+      const taskInputEL = document.getElementById("taskInput");
+      const pendingTasksEl = document.getElementById("pendingTasks");
+
+      function createTODOTextEl(taskName) {
+        const listItemtextEl = document.createElement("span");
+        listItemtextEl.textContent = taskName;
+
+        return listItemtextEl;
+      }
+
+      function removePendingItem(event) {
+        const listItem = event.target.parentNode.parentNode.parentNode;
+        pendingTasksEl.removeChild(listItem);
+      }
+
+      function createTaskCTAs() {
+        const listitemCompletedCTA = document.createElement("button");
+        listitemCompletedCTA.innerHTML = "&check;";
+
+        const listItemRemove = document.createElement("button");
+        listItemRemove.onclick = ($event) => removePendingItem($event);
+        listItemRemove.textContent = "x";
+
+        return [listitemCompletedCTA, listItemRemove];
+      }
+
+      function createTODOItem(taskName) {
+        const listItemContainerEL = document.createElement("div");
+        listItemContainerEL.classList.add('list-item-container');
+
+        const ctas = document.createElement("div");
+        ctas.append(...createTaskCTAs());
+
+        listItemContainerEL.append(createTODOTextEl(taskName), ctas);
+        return listItemContainerEL;
+      }
+
+      function fetchTask() {
+        const newTask = taskInputEL.value.trim();
+        if (newTask === "") {
+          return;
+        }
+
+        taskInputEL.value = "";
+        const newTaskEl = document.createElement("li");
+        newTaskEl.appendChild(createTODOItem(newTask));
+        pendingTasksEl.appendChild(newTaskEl);
+      }
+    </script>
   </body>
 </html>
