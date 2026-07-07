@@ -129,6 +129,7 @@
     <script>
       const taskInputEL = document.getElementById("taskInput");
       const pendingTasksEl = document.getElementById("pendingTasks");
+      const completedTasksEl = document.getElementById("completedTasks");
 
       function createTODOTextEl(taskName) {
         const listItemtextEl = document.createElement("span");
@@ -137,28 +138,54 @@
         return listItemtextEl;
       }
 
+      function completeTask(event) {
+          const listItem = event.target.parentNode.parentNode.parentNode;
+          pendingTasksEl.removeChild(listItem);
+          
+          const ctas = listItem.lastChild.lastChild;
+          listItem.lastChild.removeChild(ctas);
+          
+          completedTasksEl.appendChild(listItem);
+      }
+
+      function completeTaskUsingID(id) {
+          const listItem = document.getElementById(id);
+          pendingTasksEl.removeChild(listItem);
+          
+          const ctas = listItem.lastChild.lastChild;
+          listItem.lastChild.removeChild(ctas);
+          
+          completedTasksEl.appendChild(listItem);
+      }
+
       function removePendingItem(event) {
         const listItem = event.target.parentNode.parentNode.parentNode;
         pendingTasksEl.removeChild(listItem);
       }
+      
+      function removePendingItemUsingId(id) {
+        const listItem = document.getElementById(id);
+        pendingTasksEl.removeChild(listItem);
+      }
 
-      function createTaskCTAs() {
+      function createTaskCTAs(id) {
         const listitemCompletedCTA = document.createElement("button");
         listitemCompletedCTA.innerHTML = "&check;";
+        listitemCompletedCTA.onclick = () => completeTaskUsingID(id);
 
         const listItemRemove = document.createElement("button");
-        listItemRemove.onclick = ($event) => removePendingItem($event);
+        listItemRemove.onclick = () => removePendingItemUsingId(id);
         listItemRemove.textContent = "x";
 
         return [listitemCompletedCTA, listItemRemove];
       }
 
-      function createTODOItem(taskName) {
+      function createTODOItem(taskName, id) {
         const listItemContainerEL = document.createElement("div");
         listItemContainerEL.classList.add('list-item-container');
 
         const ctas = document.createElement("div");
-        ctas.append(...createTaskCTAs());
+        ctas.append(...createTaskCTAs(id));
 
         listItemContainerEL.append(createTODOTextEl(taskName), ctas);
         return listItemContainerEL;
@@ -172,7 +199,9 @@
 
         taskInputEL.value = "";
         const newTaskEl = document.createElement("li");
-        newTaskEl.appendChild(createTODOItem(newTask));
+        const newTaskID = newTask;
+        newTaskEl.id = newTaskID;
+        newTaskEl.appendChild(createTODOItem(newTask, newTaskID));
         pendingTasksEl.appendChild(newTaskEl);
       }
     </script>
