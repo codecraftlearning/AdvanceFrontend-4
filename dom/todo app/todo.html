@@ -199,7 +199,7 @@
 
         taskInputEL.value = "";
         const newTaskEl = document.createElement("li");
-        const newTaskID = newTask;
+        const newTaskID = Date.now();
         newTaskEl.id = newTaskID;
         newTaskEl.appendChild(createTODOItem(newTask, newTaskID));
         pendingTasksEl.appendChild(newTaskEl);
