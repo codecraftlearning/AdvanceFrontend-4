@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function addTask(){
+        const inputElement = document.getElementById("input_task");
+        const taskName = inputElement.value;
+        inputElement.value = "";
+       const taskElement = document.createElement("h3");
+       taskElement.textContent = taskName;
+       document.getElementById("pendingTask").appendChild(taskElement);
+    }
+</script>
+</head>
+<body>
+    <input id = "input_task" type = "text" placeholder="Add task">
+    <button onclick = "addTask()">Add</button>
+    <fieldset>
+        <legend>Pending Task</legend>
+        <div id ="pendingTask"></div>
+    </fieldset>
+
+
+</body>
+</html>
